@@ -16,10 +16,6 @@ class GColumnChartController extends Controller
         $query = $builder->select("COUNT(id) as count, sell as s, DAYNAME(created_at) as day");
         $query = $builder->where("DAY(created_at) GROUP BY DAYNAME(created_at), s")->get();
         $record = $query->getResult();
-        //$record = $query->getResultArray();        
-        // echo "<pre>";
-        // print_r($record);
-        // exit;
 
         $products = [];
         foreach($record as $row) {

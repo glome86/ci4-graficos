@@ -5,8 +5,7 @@ use CodeIgniter\Controller;
 class GColumnChartController extends Controller
 {
     public function index() {
-        return view('chart');
-        //echo "Oi";
+        return view('chart');        
     }
     
     public function initChart() {

@@ -27,6 +27,8 @@
 
 		<div>
 			<p class="mt-2 text-muted text-center">&copy; ACTION 2021-2022</p>
+			<p class="mt-2 text-muted text-center">Page rendered in {elapsed_time} seconds</p>
+			<p class="mt-2 text-muted text-center">Environment: <?= ENVIRONMENT ?></p>
 		</div>
 
 	</div>
